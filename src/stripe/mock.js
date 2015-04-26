@@ -1,6 +1,6 @@
 'use strict'
 
-global.Stripe = {
+window.Stripe = {
   card: {},
   bankAccount: {},
   bitcoinReceiver: {}

@@ -1,5 +1,8 @@
 {
   "optional": [
     "es7.decorators"
+  ],
+  "plugins": [
+    "object-assign"
   ]
 }
