@@ -6,7 +6,6 @@ import creditCards from 'angular-credit-cards'
 import backend from './backend'
 import stripe from './stripe'
 import Payment from './payment'
-import PaymentController from './controller'
 
 export default angular.module('payment', [
   formState,
@@ -15,5 +14,4 @@ export default angular.module('payment', [
   stripe
 ])
 .factory('Payment', Payment)
-.controller('PaymentController', PaymentController)
 .name
