@@ -5,12 +5,12 @@ import angular from 'angular'
 import backend from './backend'
 import stripe from './stripe'
 import form from './form'
-import Payment from './payment'
+import payment from './payment'
 
 export default angular.module('payment', [
   backend,
   stripe,
-  form
+  form,
+  payment
 ])
-.factory('Payment', Payment)
 .name
