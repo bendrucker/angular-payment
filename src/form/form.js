@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 import template from './form.html'
 import controller from './controller'

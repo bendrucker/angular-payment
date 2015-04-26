@@ -1,5 +1,7 @@
 'use strict'
 
+/*global describe,beforeEach,it*/
+
 import angular from 'angular'
 import 'angular-mocks'
 import assert from 'assert'
