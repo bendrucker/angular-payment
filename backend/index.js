@@ -9,10 +9,10 @@ export default angular.module('payment.backend', [
   ngMockE2E
 ])
 .value('backend', {
-  succeeds () {
+  succeeds: () => {
     status = 200
-  }
-  fails () {
+  },
+  fails: () => {
     status = 402
   }
 })
