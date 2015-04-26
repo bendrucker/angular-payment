@@ -6,7 +6,6 @@ import controller from './controller'
 export default () => {
   return {
     restrict: 'E',
-    controllerAs: 'payment',
     controller,
     template
   }

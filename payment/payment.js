@@ -18,7 +18,9 @@ function factory ($http, stripe) {
     tokenize () {
       return stripe.card.createToken(this.card)
         .then((token) => {
-          this.source = token.id
+          return Object.assign(this, {
+            source: token.id
+          })
         })
     }
     charge () {

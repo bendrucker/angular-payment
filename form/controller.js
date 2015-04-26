@@ -2,11 +2,15 @@
 
 import {annotate} from 'angular-annotation-decorator'
 
-@annotate('Payment')
+@annotate('$scope', 'Payment')
 class PaymentController {
-  constructor (Payment) {
-    this.charge = (card) => {
-      return Payment.create(card)
+  constructor ($scope, Payment) {
+    $scope.payment = new Payment()
+    $scope.charge = (payment) => {
+      return payment.tokenize()
+        .then(() => {
+          return payment.charge()
+        })
     }
   }
 }
