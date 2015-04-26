@@ -1,0 +1,8 @@
+<form bd-submit="charge(payment)">
+  <input ng-model="card.number" name="cardNumber" cc-number />
+  <cc-exp>
+    <input ng-model="card.exp_month" name="expMonth" cc-exp-month />
+    <input ng-model="card.exp_year" name="expYear" cc-exp-year />
+  </cc-exp>
+  <input ng-model="card.cvc" name="cvc" cc-cvc cc-type="cardNumber.$ccType" >
+</form>
