@@ -1,10 +1,13 @@
 'use strict'
 
-export default PaymentController
+import {annotate} from 'angular-annotation-decorator'
 
-PaymentController.$inject = ['$scope', 'Payment']
-function PaymentController ($scope, Payment) {
-  $scope.charge = (card) => {
-    return Payment.create(card)
+@annotate('Payment')
+class PaymentController {
+  constructor (Payment) {
+    this.charge = (card) => {
+      return Payment.create(card)
+    }
   }
 }
+export default PaymentController
