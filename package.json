@@ -1,0 +1,25 @@
+{
+  "name": "angular-payment",
+  "version": "1.0.0",
+  "description": "Demo application for handling credit card payments with AngularJS\\",
+  "main": "./app",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bendrucker/angular-payment.git"
+  },
+  "keywords": [
+    "angular",
+    "payments",
+    "app",
+    "demo"
+  ],
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendrucker/angular-payment/issues"
+  },
+  "homepage": "https://github.com/bendrucker/angular-payment#readme"
+}
