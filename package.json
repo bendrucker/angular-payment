@@ -4,7 +4,7 @@
   "description": "Demo application for handling credit card payments with AngularJS\\",
   "main": "./src",
   "scripts": {
-    "test": "standard"
+    "test": "standard && karma start --single-run"
   },
   "repository": {
     "type": "git",
