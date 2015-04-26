@@ -1,4 +1,4 @@
-<form bd-submit="charge(payment)">
+<form name="paymentForm" bd-submit="charge(payment)">
   <input ng-model="card.number" name="cardNumber" cc-number />
   <cc-exp>
     <input ng-model="card.exp_month" name="expMonth" cc-exp-month />
